@@ -45,9 +45,7 @@ function RegisUser($data){
     $username = htmlspecialchars($data['username']);
     $email = htmlspecialchars($data['email']);
     $password = password_hash($data['password'], PASSWORD_DEFAULT);
-
     $phone = htmlspecialchars($data['phone_number']);
-    $nik = htmlspecialchars($data['NIK']);
     $profile = upload();
 
 
@@ -56,8 +54,8 @@ function RegisUser($data){
     }
     
 
-    $query = "INSERT INTO user(username, email, password, phone_number, NIK, profile_picture)
-              VALUES('$username', '$email', '$password', '$phone', '$nik', '$profile')";
+    $query = "INSERT INTO user(username, email, password, phone_number, profile_picture)
+              VALUES('$username', '$email', '$password', '$phone', '$profile')";
 
     mysqli_query($conn, $query);
 

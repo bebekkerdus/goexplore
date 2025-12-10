@@ -52,11 +52,6 @@ if (isset($_POST["submit"])) {
         </div>
 
         <div class="input-group">
-          <label>NIK</label>
-          <input type="number" name="NIK" placeholder="Masukkan NIK" required />
-        </div>
-
-        <div class="input-group">
           <label>Foto Profil</label>
           <input type="file" name="foto" accept="image/*" placeholder="Pilih foto" />
           <small style="color: #666; display: block; margin-top: 5px;">Format: JPG, PNG, GIF (Max: 2MB)</small>
