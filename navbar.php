@@ -39,7 +39,7 @@ if (!empty($_SESSION['login'])) {
         <?php if ($logged && $profile): ?>
           <li class="nav-item profile-item" id="profileItem">
             <a href="#" class="nav-link profile-toggle" title="Lihat Profil" aria-haspopup="true" aria-expanded="false">
-              <img src="<?php echo '/foto_user/' . htmlspecialchars($profile); ?>" alt="Profile" class="nav-avatar" style="width:42px;height:42px;object-fit:cover;">
+              <img src="<?php echo 'foto_user/' . htmlspecialchars($profile); ?>" alt="Profile" class="nav-avatar" style="width:42px;height:42px;object-fit:cover;">
             </a>
             <div class="profile-dropdown" id="profileDropdown" role="menu" aria-label="Profile menu">
               <a href="profile.php" class="dropdown-item" role="menuitem">Profil</a>
