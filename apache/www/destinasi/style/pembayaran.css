@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f6f7fb;
+  color: #333;
+}
+
+/* HEADER */
+.payment-header {
+  background: linear-gradient(135deg, #ffd369, #ffcb45);
+  padding: 28px 8%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.payment-header h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.btn-back {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 8px 18px;
+  border-radius: 999px;
+  transition: 0.3s;
+}
+
+.btn-back:hover {
+  background: #fff;
+}
+
+/* CONTAINER */
+.payment-container {
+  max-width: 900px;
+  margin: 40px auto 80px;
+  padding: 0 6%;
+}
+
+/* SECTION */
+.payment-container section {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px 26px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.payment-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+}
+
+/* SUMMARY */
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+/* PRICE DETAIL */
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.price-row.total {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px dashed #ddd;
+  font-size: 1.05rem;
+}
+
+/* PAYMENT METHOD */
+.method-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.method-item:hover {
+  background: #f9f9f9;
+}
+
+.method-item input {
+  accent-color: #ffcb45;
+}
+
+/* PAY BUTTON */
+.btn-pay {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ffd369, #ffcb45);
+  box-shadow: 0 12px 26px rgba(255, 203, 69, 0.45);
+  transition: 0.3s;
+}
+
+.btn-pay:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(255, 203, 69, 0.6);
+}
+
+/* NOTE */
+.note {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .payment-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .payment-container {
+    margin-top: 30px;
+  }
+}

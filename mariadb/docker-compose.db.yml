@@ -1,0 +1,37 @@
+services:
+  db:
+    image: mariadb:11
+    container_name: dbserver
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass123
+      MYSQL_DATABASE: appdb
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: secret123
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - DigitalWorkshop
+      
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: dbserver
+      PMA_USER: root
+      PMA_PASSWORD: rootpass123
+    ports:
+      - "8084:80"
+    networks:
+      - DigitalWorkshop
+    depends_on:
+      - db
+
+volumes:
+  db_data:
+
+networks:
+  DigitalWorkshop:
+    external: true
+

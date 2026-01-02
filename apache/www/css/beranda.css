@@ -1,0 +1,276 @@
+/* ======================
+   HERO (BERANDA)
+====================== */
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80")
+    center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  max-width: 720px;
+  padding: 20px;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  opacity: 0.95;
+  margin-bottom: 26px;
+}
+
+/* Search */
+.search-container {
+  display: flex;
+  background: #fff;
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+}
+
+.search-container input {
+  flex: 1;
+  border: none;
+  padding: 14px 18px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.search-container button {
+  background: #ffd369;
+  border: none;
+  padding: 0 22px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* ======================
+   SHORTCUT
+====================== */
+.shortcuts {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 18px;
+}
+
+.shortcut-item {
+  background: #fff;
+  border-radius: 18px;
+  padding: 18px 10px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.shortcut-item:hover {
+  transform: translateY(-4px);
+}
+
+.icon-box {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 8px;
+  background: #ffd369;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+/* ======================
+   ACTIVE ORDERS
+====================== */
+.active-orders {
+  margin: 50px 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-header h3 {
+  font-size: 1.3rem;
+}
+
+.section-header a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.order-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.status-tag {
+  background: #ffe08a;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* ======================
+   PROMO
+====================== */
+.promo-banner {
+  margin: 50px 0;
+  background: linear-gradient(135deg, #ffd369, #ffb703);
+  border-radius: 22px;
+  padding: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-content .label {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.promo-content h2 {
+  margin: 6px 0;
+}
+
+.btn-claim {
+  background: #222;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+/* ======================
+   RECOMMENDATION
+====================== */
+.recommendation {
+  margin: 50px 0;
+}
+
+.scroll-wrapper {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.rec-item {
+  min-width: 170px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.rec-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.rec-desc {
+  padding: 10px;
+  font-size: 0.85rem;
+}
+
+/* ======================
+   DESTINASI
+====================== */
+.destinasi-section {
+  margin: 60px 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-body h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.price {
+  font-weight: 700;
+  color: #ff9800;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #ff9800;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .promo-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+  }
+}
